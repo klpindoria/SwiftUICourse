@@ -14,6 +14,13 @@
 		E01FCE652767FF2D00F03CB3 /* SwiftUICourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE642767FF2D00F03CB3 /* SwiftUICourseTests.swift */; };
 		E01FCE6F2767FF2D00F03CB3 /* SwiftUICourseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE6E2767FF2D00F03CB3 /* SwiftUICourseUITests.swift */; };
 		E01FCE712767FF2D00F03CB3 /* SwiftUICourseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE702767FF2D00F03CB3 /* SwiftUICourseUITestsLaunchTests.swift */; };
+		E01FCE7E27680E8A00F03CB3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE7D27680E8A00F03CB3 /* DetailView.swift */; };
+		E01FCE802768121C00F03CB3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE7F2768121C00F03CB3 /* CardView.swift */; };
+		E01FCE822768128700F03CB3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE812768128700F03CB3 /* HomeView.swift */; };
+		E01FCE84276816DD00F03CB3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE83276816DD00F03CB3 /* ListView.swift */; };
+		E01FCE862768189400F03CB3 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE852768189400F03CB3 /* ListItem.swift */; };
+		E01FCE8B27681D9900F03CB3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE8A27681D9900F03CB3 /* Data.swift */; };
+		E01FCE8D276829B200F03CB3 /* SmallCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE8C276829B200F03CB3 /* SmallCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		E01FCE6A2767FF2D00F03CB3 /* SwiftUICourseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICourseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01FCE6E2767FF2D00F03CB3 /* SwiftUICourseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICourseUITests.swift; sourceTree = "<group>"; };
 		E01FCE702767FF2D00F03CB3 /* SwiftUICourseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICourseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E01FCE7D27680E8A00F03CB3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E01FCE7F2768121C00F03CB3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E01FCE812768128700F03CB3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E01FCE83276816DD00F03CB3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E01FCE852768189400F03CB3 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		E01FCE8A27681D9900F03CB3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E01FCE8C276829B200F03CB3 /* SmallCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				E01FCE522767FF2C00F03CB3 /* SwiftUICourse */,
+				E01FCE572767FF2D00F03CB3 /* Assets.xcassets */,
 				E01FCE632767FF2D00F03CB3 /* SwiftUICourseTests */,
 				E01FCE6D2767FF2D00F03CB3 /* SwiftUICourseUITests */,
 				E01FCE512767FF2C00F03CB3 /* Products */,
@@ -95,9 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				E01FCE532767FF2C00F03CB3 /* SwiftUICourseApp.swift */,
-				E01FCE552767FF2C00F03CB3 /* ContentView.swift */,
-				E01FCE572767FF2D00F03CB3 /* Assets.xcassets */,
+				E01FCE8927681CD300F03CB3 /* Components */,
+				E01FCE8827681CC700F03CB3 /* Views */,
+				E01FCE8727681CB500F03CB3 /* Navigation */,
 				E01FCE592767FF2D00F03CB3 /* Preview Content */,
+				E01FCE8A27681D9900F03CB3 /* Data.swift */,
 			);
 			path = SwiftUICourse;
 			sourceTree = "<group>";
@@ -125,6 +142,34 @@
 				E01FCE702767FF2D00F03CB3 /* SwiftUICourseUITestsLaunchTests.swift */,
 			);
 			path = SwiftUICourseUITests;
+			sourceTree = "<group>";
+		};
+		E01FCE8727681CB500F03CB3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E01FCE552767FF2C00F03CB3 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E01FCE8827681CC700F03CB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E01FCE83276816DD00F03CB3 /* ListView.swift */,
+				E01FCE812768128700F03CB3 /* HomeView.swift */,
+				E01FCE7D27680E8A00F03CB3 /* DetailView.swift */,
+				E01FCE8C276829B200F03CB3 /* SmallCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E01FCE8927681CD300F03CB3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E01FCE852768189400F03CB3 /* ListItem.swift */,
+				E01FCE7F2768121C00F03CB3 /* CardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E01FCE562767FF2C00F03CB3 /* ContentView.swift in Sources */,
+				E01FCE8D276829B200F03CB3 /* SmallCardView.swift in Sources */,
+				E01FCE862768189400F03CB3 /* ListItem.swift in Sources */,
+				E01FCE7E27680E8A00F03CB3 /* DetailView.swift in Sources */,
+				E01FCE84276816DD00F03CB3 /* ListView.swift in Sources */,
+				E01FCE802768121C00F03CB3 /* CardView.swift in Sources */,
+				E01FCE822768128700F03CB3 /* HomeView.swift in Sources */,
 				E01FCE542767FF2C00F03CB3 /* SwiftUICourseApp.swift in Sources */,
+				E01FCE8B27681D9900F03CB3 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
