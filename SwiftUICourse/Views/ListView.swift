@@ -11,19 +11,22 @@ struct ListView: View {
     
     @State var show = false
     
+    @State private var selectedItem: Item? = nil
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(items) { item in
                     ListItem(item: item)
-                        .sheet(isPresented: $show, content: {
-                            Text(item.text)
-                        })
                         .onTapGesture {
-                            show.toggle()
-                        }                }
+                            self.selectedItem = item
+                        }
+                }
             }
-            .padding(.vertical, 20.0)
+            .sheet(item: self.$selectedItem, content: { selectedItem in
+                DetailView(item: selectedItem)
+            })
+            
             .navigationTitle("My Courses")
         }
     }
