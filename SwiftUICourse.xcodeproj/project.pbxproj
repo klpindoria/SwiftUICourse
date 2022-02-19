@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E016B98027C13256007F9F30 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016B97F27C13256007F9F30 /* CourseViewModel.swift */; };
+		E016B98227C157C9007F9F30 /* RemoteDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016B98127C157C9007F9F30 /* RemoteDataView.swift */; };
+		E016B98427C164A9007F9F30 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016B98327C164A9007F9F30 /* ImageViewModel.swift */; };
+		E016B98627C16EE2007F9F30 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016B98527C16EE2007F9F30 /* ImageView.swift */; };
 		E01FCE542767FF2C00F03CB3 /* SwiftUICourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE532767FF2C00F03CB3 /* SwiftUICourseApp.swift */; };
 		E01FCE562767FF2C00F03CB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01FCE552767FF2C00F03CB3 /* ContentView.swift */; };
 		E01FCE582767FF2D00F03CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01FCE572767FF2D00F03CB3 /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E016B97F27C13256007F9F30 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		E016B98127C157C9007F9F30 /* RemoteDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataView.swift; sourceTree = "<group>"; };
+		E016B98327C164A9007F9F30 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		E016B98527C16EE2007F9F30 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		E01FCE502767FF2C00F03CB3 /* SwiftUICourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01FCE532767FF2C00F03CB3 /* SwiftUICourseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICourseApp.swift; sourceTree = "<group>"; };
 		E01FCE552767FF2C00F03CB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E016B97E27C1321F007F9F30 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E01FCE8A27681D9900F03CB3 /* Data.swift */,
+				E016B97F27C13256007F9F30 /* CourseViewModel.swift */,
+				E016B98327C164A9007F9F30 /* ImageViewModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		E01FCE472767FF2C00F03CB3 = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +132,7 @@
 				E01FCE8827681CC700F03CB3 /* Views */,
 				E01FCE8727681CB500F03CB3 /* Navigation */,
 				E01FCE592767FF2D00F03CB3 /* Preview Content */,
-				E01FCE8A27681D9900F03CB3 /* Data.swift */,
+				E016B97E27C1321F007F9F30 /* Data */,
 			);
 			path = SwiftUICourse;
 			sourceTree = "<group>";
@@ -157,8 +175,10 @@
 			children = (
 				E01FCE83276816DD00F03CB3 /* ListView.swift */,
 				E01FCE812768128700F03CB3 /* HomeView.swift */,
+				E016B98127C157C9007F9F30 /* RemoteDataView.swift */,
 				E01FCE7D27680E8A00F03CB3 /* DetailView.swift */,
 				E01FCE8C276829B200F03CB3 /* SmallCardView.swift */,
+				E016B98527C16EE2007F9F30 /* ImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,9 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E01FCE562767FF2C00F03CB3 /* ContentView.swift in Sources */,
+				E016B98227C157C9007F9F30 /* RemoteDataView.swift in Sources */,
 				E01FCE8D276829B200F03CB3 /* SmallCardView.swift in Sources */,
 				E01FCE862768189400F03CB3 /* ListItem.swift in Sources */,
+				E016B98627C16EE2007F9F30 /* ImageView.swift in Sources */,
+				E016B98027C13256007F9F30 /* CourseViewModel.swift in Sources */,
 				E01FCE7E27680E8A00F03CB3 /* DetailView.swift in Sources */,
+				E016B98427C164A9007F9F30 /* ImageViewModel.swift in Sources */,
 				E01FCE84276816DD00F03CB3 /* ListView.swift in Sources */,
 				E01FCE802768121C00F03CB3 /* CardView.swift in Sources */,
 				E01FCE822768128700F03CB3 /* HomeView.swift in Sources */,

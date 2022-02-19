@@ -21,6 +21,12 @@ struct ContentView: View {
                     Image(systemName: "list.bullet.circle.fill")
                     Text("My Courses")
                 }
+            
+            RemoteDataView()
+                .tabItem {
+                    Image(systemName: "globe")
+                    Text("Live Courses")
+                }
         }
     }
 }
